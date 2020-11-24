@@ -23,7 +23,7 @@
     background-position: center center;
     background-size: cover;
     background-color: #000000;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 }
 
 .top-bar::after {
@@ -92,6 +92,10 @@
     line-height: 75px;
 }
 
+.trends-bar {
+    margin-top: -12.5%;
+}
+
 .trends {
     display: flex;
     flex-wrap: wrap;
@@ -103,24 +107,83 @@
     width: 24.6%;
 }
 
-.trend-preview {
-
+.trend-block-1 {
+    background-image: url("../images/trend1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.trend-img {
-    width: 100%;
+.trend-block-2 {
+    background-image: url("../images/trend2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.trend-block-3 {
+    background-image: url("../images/trend3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trend-block-4 {
+    background-image: url("../images/trend4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trend-inform {
+    height: 320px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.trend-inform::before {
+    background: #000000;
+    content: "";
+    position: absolute;
+    width: 24.3%;
+    height: 320px;
+    opacity: 0.6;
+}
+
+.trend-info {
+    padding-left: 33px;
+    padding-right: 41px;
+    padding-top: 12px;
+    border: 4px solid rgba(181, 159, 91, 0.7);
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+.post-category-trend-link {
+    font-family: OpenSans-Bold;
+    color: #b59f5b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.post-category-trend-link:nth-child(n+1) {
+    margin-right: 20px;
+}
+
+.post-category-trend-link:hover {
+    border-bottom: 2px solid rgba(181, 159, 91, 0.88);
+}
+
 
 .trend-name {
     font-family: OpenSans-Bold;
     text-transform: uppercase;
     font-size: 20px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 .trend-name:hover {
-    text-shadow: 0.4px 0 0 #000000;
+    text-shadow: 0.4px 0 0 #ffffff;
 }
 
 .content-bar-list {
@@ -150,8 +213,6 @@
 
 .post-picture {
     margin-top: 15px;
-    width: 378px;
-    height: 290px;
 }
 
 .post-info {
@@ -229,10 +290,6 @@
     margin-bottom: 29px;
 }
 
-.trends-bar {
-    margin-top: -12%;
-}
-
 .name {
     font-family: OpenSans-Bold;
     color: #0f0d0e;
@@ -260,8 +317,6 @@
 
 .latest-post-picture {
     margin-right: 20px;
-    width: 70px;
-    height: 70px;
 }
 
 .latest-post-info {
