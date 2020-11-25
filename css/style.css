@@ -53,6 +53,21 @@
     width: 180px;
 }
 
+.nav-icon-menu {
+    display: none;
+    width: 26px;
+}
+
+.nav-icon {
+    font-family: OpenSans-Bold;
+    font-size: 28px;
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 0;
+}
+
 .menu {
     display: flex;
     font-size: 13px;
@@ -553,7 +568,38 @@ justify-content: space-between;
     align-items: flex-end;
 }
 
+.product-price-old{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.product-price.product-price-old::after {
+    border-bottom: 1px solid #000;
+    width: 0.4em;
+    content: "";
+    position: absolute;
+    margin-top: 16.5px;
+    margin-left: 28px;
+}
+
 .product-price {
+     display: flex;
+     font-family: OpenSans-Bold;
+     color: #0f0d0e;
+     text-transform: uppercase;
+     font-size: 20px;
+     font-weight: normal;
+ }
+
+.product-price::after {
+    border-bottom: 2px solid #000;
+    width: 0.3em;
+    content: "";
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 38px;
+}
+
+.product-price-one-value {
     display: flex;
     font-family: OpenSans-Bold;
     color: #0f0d0e;
@@ -561,10 +607,16 @@ justify-content: space-between;
     font-size: 20px;
     font-weight: normal;
 }
-.product-price-old{
-    text-decoration: line-through;
-    font-size: 14px;
+
+.product-price-one-value::after {
+    border-bottom: 2px solid #000;
+    width: 0.3em;
+    content: "";
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 50px;
 }
+
 .product-button{
 font-family: OpenSans-Bold;
 font-size: 14px;
@@ -835,4 +887,264 @@ border-left: 1px solid #fbf9f5;
     position: relative;
     float: right;
     top: -30px;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+
+    .top-bar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 36px;
+        padding-bottom: 126px;
+        background-image: url(../images/banner-bg-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: #000000;
+        margin-bottom: 40px;
+    }
+
+    .nav-icon-menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 4%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container-top {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 4%;
+    }
+
+    .intro {
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 64px;
+    }
+
+    .trend {
+        width: 49%;
+        margin-bottom: 1%;
+    }
+
+    .trend-inform::before {
+        background: #000000;
+        content: "";
+        position: absolute;
+        width: 47.8%;
+        height: 320px;
+        opacity: 0.6;
+    }
+
+    .post {
+        display: block;
+        width: 100%;
+    }
+
+    .post-picture {
+        margin-top: 15px;
+        width: 94%;
+    }
+
+    .post-info {
+        width: 94%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    .right-bar {
+        width: 50%;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .latest-post-content {
+        display: flex;
+    }
+
+    .latest-post-search-group {
+        width: 90%;
+    }
+
+    .field {
+        color: #000000;
+        width: 100%;
+        height: 50px;
+        border: none;
+        background-color: #f4f7f6;
+    }
+
+    .subsscribe-search {
+        width: 90%;
+    }
+
+    .field-subsscribe {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #000000;
+        box-sizing: border-box;
+        width: 110%;
+        height: 50px;
+        padding-left: 20px;
+        border: none;
+        background-color: #f4f7f6;
+        margin-bottom: 18px;
+    }
+
+    .subsscribe-button {
+        font-family: OpenSans-Bold;
+        font-size: 14px;
+        color: #ffffff;
+        box-sizing: border-box;
+        width: 110%;
+        height: 48px;
+        padding: 18px 82px 19px 82px;
+        border: none;
+        text-transform: uppercase;
+        background-color: #b59f5b;
+        border-top: 1px solid #e6dfc8;
+        border-left: 1px solid #fbf9f5;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -15%;
+    }
+
+    .product {
+        box-sizing: border-box;
+        width: 49%;
+        border: 4px solid #d3c59d;
+        padding-left: 1.7%;
+        padding-right: 1.7%;
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+
+    .top-bar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 36px;
+        padding-bottom: 126px;
+        background-image: url(../images/banner-bg-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: #000000;
+        margin-bottom: 40px;
+    }
+
+    .nav-icon-menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 4%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container-top {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 4%;
+    }
+
+    .intro {
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 64px;
+    }
+
+    .post {
+        display: block;
+        width: 100%;
+    }
+
+    .post-picture {
+        margin-top: 15px;
+        width: 94%;
+    }
+
+    .post-info {
+        width: 94%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    .right-bar {
+        width: 50%;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .latest-post-content {
+        display: flex;
+    }
+
+    .latest-post-search-group {
+        width: 90%;
+    }
+
+    .field {
+        color: #000000;
+        width: 100%;
+        height: 50px;
+        border: none;
+        background-color: #f4f7f6;
+    }
+
+    .subsscribe-search {
+        width: 90%;
+    }
+
+    .field-subsscribe {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #000000;
+        box-sizing: border-box;
+        width: 110%;
+        height: 50px;
+        padding-left: 20px;
+        border: none;
+        background-color: #f4f7f6;
+        margin-bottom: 18px;
+    }
+
+    .subsscribe-button {
+        font-family: OpenSans-Bold;
+        font-size: 14px;
+        color: #ffffff;
+        box-sizing: border-box;
+        width: 110%;
+        height: 48px;
+        padding: 18px 82px 19px 82px;
+        border: none;
+        text-transform: uppercase;
+        background-color: #b59f5b;
+        border-top: 1px solid #e6dfc8;
+        border-left: 1px solid #fbf9f5;
+    }
 }
