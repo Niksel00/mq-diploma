@@ -1,3 +1,7 @@
+body {
+    min-width: 320px;
+}
+
 @font-face {
     font-family: OpenSans-Regular;
     font-style: normal;
@@ -162,14 +166,15 @@
 }
 
 .trend-info {
-    padding-left: 33px;
-    padding-right: 41px;
+    padding-left: 3%;
+    padding-right: 4%;
     padding-top: 12px;
     border: 4px solid rgba(181, 159, 91, 0.7);
     margin-left: 20px;
     margin-right: 25px;
     margin-bottom: 15px;
     z-index: 2;
+    width: 80%;
 }
 
 .post-category-trend-link {
@@ -536,7 +541,7 @@ justify-content: space-between;
     text-transform: uppercase;
     font-family: OpenSans-Bold;
     color: #0f0d0e;
-    font-size: 20px;
+    font-size: 0.92em;
     font-weight: normal;
 
 }
@@ -544,7 +549,7 @@ justify-content: space-between;
 .product-description {
     font-family: OpenSans-Regular;
     color: #0f0d0e;
-    font-size: 15px;
+    font-size: 0.8em;
     font-weight: normal;
     text-align: left;
 }
@@ -565,7 +570,8 @@ justify-content: space-between;
 .product-footer {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    width: 100%;
 }
 
 .product-price-old{
@@ -617,16 +623,18 @@ justify-content: space-between;
     margin-left: 50px;
 }
 
-.product-button{
-font-family: OpenSans-Bold;
-font-size: 14px;
-color: #ffffff;
-padding: 18px 29px 19px 29px;
-border: none;
-text-transform: uppercase;
-background-color: #b59f5b;
-border-top: 1px solid #e6dfc8;
-border-left: 1px solid #fbf9f5;
+.product-button {
+    font-family: OpenSans-Bold;
+    font-size: 0.81em;
+    color: #ffffff;
+    padding: 10% 3% 10% 3%;
+    border: none;
+    text-transform: uppercase;
+    background-color: #b59f5b;
+    border-top: 1px solid #e6dfc8;
+    border-left: 1px solid #fbf9f5;
+    justify-content: flex-end;
+    width: 63%;
 }
 
 .product-button:hover {
@@ -922,12 +930,18 @@ border-left: 1px solid #fbf9f5;
         margin-left: 4%;
     }
 
+    .intro-title {
+        font-family: OpenSans-Bold;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 40px;
+        text-transform: uppercase;
+        line-height: 55px;
+    }
+
     .intro {
-        width: 99%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 97%;
         padding-top: 64px;
     }
 
@@ -940,9 +954,25 @@ border-left: 1px solid #fbf9f5;
         background: #000000;
         content: "";
         position: absolute;
-        width: 47.8%;
+        width: 48%;
         height: 320px;
         opacity: 0.6;
+    }
+
+    .post-category-trend-link {
+        font-family: OpenSans-Bold;
+        color: #b59f5b;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.4vw;
+    }
+
+    .trend-name {
+        font-family: OpenSans-Bold;
+        text-transform: uppercase;
+        font-size: 2vw;
+        text-decoration: none;
+        color: #ffffff;
     }
 
     .post {
@@ -971,6 +1001,7 @@ border-left: 1px solid #fbf9f5;
 
     .latest-post-content {
         display: flex;
+        width: 100%;
     }
 
     .latest-post-search-group {
@@ -1067,13 +1098,35 @@ border-left: 1px solid #fbf9f5;
         margin-left: 4%;
     }
 
+    .intro-title {
+        font-family: OpenSans-Bold;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 40px;
+        text-transform: uppercase;
+        line-height: 55px;
+    }
+
     .intro {
-        width: 99%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 97%;
         padding-top: 64px;
+    }
+
+    .post-category-trend-link {
+        font-family: OpenSans-Bold;
+        color: #b59f5b;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.4vw;
+    }
+
+    .trend-name {
+        font-family: OpenSans-Bold;
+        text-transform: uppercase;
+        font-size: 2vw;
+        text-decoration: none;
+        color: #ffffff;
     }
 
     .post {
@@ -1102,6 +1155,7 @@ border-left: 1px solid #fbf9f5;
 
     .latest-post-content {
         display: flex;
+        width: 100%;
     }
 
     .latest-post-search-group {
@@ -1146,5 +1200,326 @@ border-left: 1px solid #fbf9f5;
         background-color: #b59f5b;
         border-top: 1px solid #e6dfc8;
         border-left: 1px solid #fbf9f5;
+    }
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+    .top-bar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 36px;
+        padding-bottom: 126px;
+        background-image: url(../images/banner-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: #000000;
+        margin-bottom: 40px;
+    }
+
+    .container-top {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .container-logo {
+        width: 180px;
+        margin-top: 46%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-icon-menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 98%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .intro-title {
+        font-family: OpenSans-Bold;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 26px;
+        text-transform: uppercase;
+        line-height: 36px;
+    }
+
+    .intro {
+        width: 97%;
+        padding-top: 64px;
+    }
+
+    .trend {
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    .trend-inform::before {
+        background: #000000;
+        content: "";
+        position: absolute;
+        width: 97%;
+        height: 320px;
+        opacity: 0.6;
+    }
+
+    .bar-list {
+        display: block;
+        width: 100%;
+    }
+
+    .post {
+        display: block;
+        width: 100%;
+    }
+
+    .post-info {
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    .post-picture {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .right-bar {
+        width: 100%;
+    }
+
+    .latest-post-content {
+        display: flex;
+        width: 100%;
+    }
+
+    .latest-post-search-group {
+        width: 100%;
+    }
+
+    .field {
+        color: #000000;
+        width: 100%;
+        height: 50px;
+        border: none;
+        background-color: #f4f7f6;
+    }
+
+    .field-subsscribe {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #000000;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        border: none;
+        background-color: #f4f7f6;
+        margin-bottom: 18px;
+    }
+
+    .subsscribe-button {
+        font-family: OpenSans-Bold;
+        font-size: 14px;
+        color: #ffffff;
+        box-sizing: border-box;
+        width: 100%;
+        height: 48px;
+        padding: 18px 82px 19px 82px;
+        border: none;
+        text-transform: uppercase;
+        background-color: #b59f5b;
+        border-top: 1px solid #e6dfc8;
+        border-left: 1px solid #fbf9f5;
+    }
+
+    .tags-menu-link {
+        padding: 2px 2px 2px 2px;
+        border: 3px solid #eeeeee;
+        margin-bottom: 5px;
+        margin-right: 3px;
+    }
+
+    .product {
+        box-sizing: border-box;
+        width: 100%;
+        border: 4px solid #d3c59d;
+        padding-left: 1.7%;
+        padding-right: 1.7%;
+        margin-top: 60%;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .top-bar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 36px;
+        padding-bottom: 126px;
+        background-image: url(../images/banner-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: #000000;
+        margin-bottom: 40px;
+    }
+
+    .container-top {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .container-logo {
+        width: 180px;
+        margin-top: 46%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-icon-menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 98%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .intro-title {
+        font-family: OpenSans-Bold;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 26px;
+        text-transform: uppercase;
+        line-height: 36px;
+    }
+
+    .intro {
+        width: 97%;
+        padding-top: 64px;
+    }
+
+    .trend {
+        width: 49%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+    }
+
+    .trend-inform::before {
+        background: #000000;
+        content: "";
+        position: absolute;
+        width: 48%;
+        height: 320px;
+        opacity: 0.6;
+    }
+
+    .post-category-trend-link {
+        font-family: OpenSans-Bold;
+        color: #b59f5b;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2.4vw;
+    }
+
+    .trend-name {
+        font-family: OpenSans-Bold;
+        text-transform: uppercase;
+        font-size: 3vw;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .bar-list {
+        display: block;
+        width: 100%;
+    }
+
+    .post {
+        display: block;
+        width: 100%;
+    }
+
+    .post-info {
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    .post-picture {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .right-bar {
+        width: 100%;
+    }
+
+    .latest-post-content {
+        display: flex;
+        width: 100%;
+    }
+
+    .latest-post-search-group {
+        width: 100%;
+    }
+
+    .field {
+        color: #000000;
+        width: 100%;
+        height: 50px;
+        border: none;
+        background-color: #f4f7f6;
+    }
+
+    .field-subsscribe {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #000000;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        border: none;
+        background-color: #f4f7f6;
+        margin-bottom: 18px;
+    }
+
+    .subsscribe-button {
+        font-family: OpenSans-Bold;
+        font-size: 14px;
+        color: #ffffff;
+        box-sizing: border-box;
+        width: 100%;
+        height: 48px;
+        padding: 18px 82px 19px 82px;
+        border: none;
+        text-transform: uppercase;
+        background-color: #b59f5b;
+        border-top: 1px solid #e6dfc8;
+        border-left: 1px solid #fbf9f5;
+    }
+
+    .tags-menu-link {
+        padding: 2px 2px 2px 2px;
+        border: 3px solid #eeeeee;
+        margin-bottom: 5px;
+        margin-right: 3px;
+    }
+
+    .product {
+        box-sizing: border-box;
+        width: 100%;
+        border: 4px solid #d3c59d;
+        padding-left: 1.7%;
+        padding-right: 1.7%;
+        margin-top: 60%;
     }
 }
