@@ -15,8 +15,7 @@
 <header class="top-bar">
     <div class="container">
         <div class="container-top">
-            <img class="container-logo"
-                 src="svg/noemi-logo.svg" alt="Логотип">
+            <a href="#0"><img class="container-logo" src="svg/noemi-logo.svg" alt="Логотип"></a>
 
             <div class="nav-icon-menu">
                 <button  class="nav-icon" type="button">☰</button>
@@ -265,7 +264,7 @@
 
                 <form class="latest-post-search">
                     <label class="latest-post-search-group">
-                        <input type="search" class="field" placeholder="Найти ..." required>
+                        <input type="search" class="field" placeholder="Найти ..." required="" alt="Поле поиска">
                     </label>
                     <button class="latest-post-button"></button>
                 </form>
@@ -280,7 +279,7 @@
 
                 <form class="subsscribe-search">
                     <label class="subsscribe-search-group">
-                        <input type="email" class="field-subsscribe" placeholder="Ваш email-адрес ..." required>
+                        <input type="email" class="field-subsscribe" placeholder="Ваш email-адрес ..." required="" alt="Поле ввода email-адреса">
                     </label>
                     <button class="subsscribe-button">Подписаться</button>
                 </form>
@@ -293,14 +292,14 @@
                 </div>
 
                 <ul class="tags-menu">
-                    <li class="tags-menu-link"><a class="tags-link" href="#0">Fashion</a></li>
-                    <li class="tags-menu-link"><a class="tags-link" href="#0">Music</a></li>
-                    <li class="tags-menu-link"><a class="tags-link" href="#0">Lifestile</a></li>
-                    <li class="tags-menu-link"><a class="tags-link" href="#0">Art</a></li>
-                    <li class="tags-menu-link"><a class="tags-link" href="#0">Interior</a></li>
-                    <li class="tags-menu-link"><a class="tags-link" href="#0">Travel</a></li>
-                    <li class="tags-menu-link"><a class="tags-link" href="#0">Food</a></li>
-                    <li class="tags-menu-link"><a class="tags-link" href="#0">Health</a></li>
+                    <a class="tags-link" href="#0"><li class="tags-menu-link">Fashion</li></a>
+                    <a class="tags-link" href="#0"><li class="tags-menu-link">Music</li></a>
+                    <a class="tags-link" href="#0"><li class="tags-menu-link">Lifestile</li></a>
+                    <a class="tags-link" href="#0"><li class="tags-menu-link">Art</li></a>
+                    <a class="tags-link" href="#0"><li class="tags-menu-link">Interior</li></a>
+                    <a class="tags-link" href="#0"><li class="tags-menu-link">Travel</li></a>
+                    <a class="tags-link" href="#0"><li class="tags-menu-link">Food</li></a>
+                    <a class="tags-link" href="#0"><li class="tags-menu-link">Health</li></a>
                 </ul>
             </section>
 
@@ -313,32 +312,32 @@
                 <div class="catigories">
                     <div class="catigories-menu">
                         <a class="catigories-menu-link" href="#0">Красота</a>
-                        <a class="catigories-number-link">12</a>
+                        <span class="catigories-number-link">12</span>
                     </div>
 
                     <div class="catigories-menu">
                         <a class="catigories-menu-link" href="#0">Здоровье</a>
-                        <a class="catigories-number-link">4</a>
+                        <span class="catigories-number-link">4</span>
                     </div>
 
                     <div class="catigories-menu">
                         <a class="catigories-menu-link" href="#0">Образ жизни</a>
-                        <a class="catigories-number-link">145</a>
+                        <span class="catigories-number-link">145</span>
                     </div>
 
                     <div class="catigories-menu">
                         <a class="catigories-menu-link" href="#0">Музыка</a>
-                        <a class="catigories-number-link">28</a>
+                        <span class="catigories-number-link">28</span>
                     </div>
 
                     <div class="catigories-menu">
                         <a class="catigories-menu-link" href="#0">Спорт</a>
-                        <a class="catigories-number-link">62</a>
+                        <span class="catigories-number-link">62</span>
                     </div>
 
                     <div class="catigories-menu">
                         <a class="catigories-menu-link" href="#0">Йога</a>
-                        <a class="catigories-number-link">8</a>
+                        <span class="catigories-number-link">8</span>
 
                     </div>
                 </div>
@@ -519,11 +518,11 @@
     <div class="popup-form">
         <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
         <label class="radio-group">
-            <input type="radio" class="radio" name="radio-group">
+            <input type="radio" class="radio" name="radio-group" alt="Кнопка выбора - да">
             <span class="radio-group-text">Да</span>
         </label>
         <label class="radio-group">
-            <input type="radio" class="radio" name="radio-group">
+            <input type="radio" class="radio" name="radio-group" alt="Кнопка выбора - нет">
             <span class="radio-group-text">Нет</span>
         </label>
     </div>

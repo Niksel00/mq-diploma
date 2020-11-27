@@ -1,5 +1,8 @@
 body {
     min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -45,6 +48,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
+    max-width: 100%;
 }
 
 .container-top {
@@ -111,10 +115,6 @@ body {
     line-height: 75px;
 }
 
-.trends-bar {
-    margin-top: -12.5%;
-}
-
 .trends {
     display: flex;
     flex-wrap: wrap;
@@ -160,7 +160,7 @@ body {
     background: #000000;
     content: "";
     position: absolute;
-    width: 24.3%;
+    width: 24.6%;
     height: 320px;
     opacity: 0.6;
 }
@@ -207,8 +207,10 @@ body {
 }
 
 .content-bar-list {
-    padding-left: 18px;
-    padding-right: 18px;
+    display: block;
+    width: 72.3%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bar-list{
@@ -233,11 +235,13 @@ body {
 
 .post-picture {
     margin-top: 15px;
+    width: 50%;
 }
 
 .post-info {
     box-sizing: border-box;
     margin-left: 30px;
+    width: 70%;
 }
 
 
@@ -487,7 +491,6 @@ body {
 
 .title-content-bar-list {
     text-align: center;
-    margin-bottom: 14%;
 }
 
 .name-content-bar-list {
@@ -505,6 +508,10 @@ body {
     height: 3px;
     background: #e1d9bd;
     margin: 8px auto;
+}
+
+.product-bar {
+    margin-top: 14%;
 }
 
 .products {
@@ -541,6 +548,7 @@ justify-content: space-between;
     text-transform: uppercase;
     font-family: OpenSans-Bold;
     color: #0f0d0e;
+    font-size: 20px;
     font-size: 0.92em;
     font-weight: normal;
 
@@ -549,27 +557,25 @@ justify-content: space-between;
 .product-description {
     font-family: OpenSans-Regular;
     color: #0f0d0e;
+    font-size: 15px;
     font-size: 0.8em;
     font-weight: normal;
     text-align: left;
 }
-
 .product-description:hover{
     text-shadow: 0.4px 0 0 #000000;
 }
-
 .product-link {
     text-decoration: none;
     color: #b59f5b;
 }
-
 .product-link:hover{
     text-decoration: underline;
 }
-
 .product-footer {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     align-items: center;
     width: 100%;
 }
@@ -586,16 +592,14 @@ justify-content: space-between;
     margin-top: 16.5px;
     margin-left: 28px;
 }
-
 .product-price {
-     display: flex;
-     font-family: OpenSans-Bold;
-     color: #0f0d0e;
-     text-transform: uppercase;
-     font-size: 20px;
-     font-weight: normal;
- }
-
+    display: flex;
+    font-family: OpenSans-Bold;
+    color: #0f0d0e;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+}
 .product-price::after {
     border-bottom: 2px solid #000;
     width: 0.3em;
@@ -604,7 +608,6 @@ justify-content: space-between;
     margin-top: 17px;
     margin-left: 38px;
 }
-
 .product-price-one-value {
     display: flex;
     font-family: OpenSans-Bold;
@@ -613,7 +616,6 @@ justify-content: space-between;
     font-size: 20px;
     font-weight: normal;
 }
-
 .product-price-one-value::after {
     border-bottom: 2px solid #000;
     width: 0.3em;
@@ -625,9 +627,9 @@ justify-content: space-between;
 
 .product-button {
     font-family: OpenSans-Bold;
-    font-size: 0.81em;
+    font-size: 14.6px;
     color: #ffffff;
-    padding: 10% 3% 10% 3%;
+    padding: 12px 6px 12px 6px;
     border: none;
     text-transform: uppercase;
     background-color: #b59f5b;
@@ -898,6 +900,9 @@ justify-content: space-between;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+    .top-bar-and-trends {
+        width: 99%;
+    }
 
     .top-bar {
         position: relative;
@@ -954,7 +959,7 @@ justify-content: space-between;
         background: #000000;
         content: "";
         position: absolute;
-        width: 48%;
+        width: 49%;
         height: 320px;
         opacity: 0.6;
     }
@@ -973,6 +978,17 @@ justify-content: space-between;
         font-size: 2vw;
         text-decoration: none;
         color: #ffffff;
+    }
+
+    .content-bar-list {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bar-list {
+        width: 99%;
     }
 
     .post {
@@ -1066,6 +1082,9 @@ justify-content: space-between;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    .top-bar-and-trends {
+        width: 99%;
+    }
 
     .top-bar {
         position: relative;
@@ -1127,6 +1146,17 @@ justify-content: space-between;
         font-size: 2vw;
         text-decoration: none;
         color: #ffffff;
+    }
+
+    .content-bar-list {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bar-list {
+        width: 99%;
     }
 
     .post {
@@ -1204,6 +1234,10 @@ justify-content: space-between;
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
+    .top-bar-and-trends {
+        width: 99%;
+    }
+
     .top-bar {
         position: relative;
         width: 100%;
@@ -1264,14 +1298,21 @@ justify-content: space-between;
         background: #000000;
         content: "";
         position: absolute;
-        width: 97%;
+        width: 99.9%;
         height: 320px;
         opacity: 0.6;
     }
 
+    .content-bar-list {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .bar-list {
         display: block;
-        width: 100%;
+        width: 99%;
     }
 
     .post {
@@ -1282,6 +1323,7 @@ justify-content: space-between;
     .post-info {
         box-sizing: border-box;
         margin-left: 0;
+        width: 100%;
     }
 
     .post-picture {
@@ -1356,6 +1398,10 @@ justify-content: space-between;
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
+    .top-bar-and-trends {
+        width: 99%;
+    }
+
     .top-bar {
         position: relative;
         width: 100%;
@@ -1417,9 +1463,16 @@ justify-content: space-between;
         background: #000000;
         content: "";
         position: absolute;
-        width: 48%;
+        width: 49%;
         height: 320px;
         opacity: 0.6;
+    }
+
+    .content-bar-list {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .post-category-trend-link {
@@ -1440,7 +1493,7 @@ justify-content: space-between;
 
     .bar-list {
         display: block;
-        width: 100%;
+        width: 99%;
     }
 
     .post {
