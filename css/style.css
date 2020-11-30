@@ -19,6 +19,10 @@ body {
     src: url(../fonts/OpenSans-Bold.ttf);
 }
 
+.top-bar-and-trends {
+    width: 100%;
+}
+
 .top-bar {
     position: relative;
     width: 100%;
@@ -100,8 +104,6 @@ body {
     width: 730px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 64px;
 }
 
@@ -367,6 +369,13 @@ body {
     display: flex;
 }
 
+.input_description_hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
 .field {
     font-family: OpenSans-Regular;
     font-size: 14px;
@@ -447,6 +456,11 @@ body {
     border: 3px solid #eeeeee;
     margin-bottom: 5px;
     margin-right: 3px;
+    cursor: pointer;
+}
+
+.tags-menu-link:hover {
+    text-shadow: 1px 0 0 #000000;
 }
 
 .tags-link{
@@ -458,8 +472,8 @@ body {
     text-transform: uppercase;
 }
 
-.tags-link:hover {
-    text-shadow: 1px 0 0 #000000;
+.tags-menu-link > .tags-link {
+    display: block;
 }
 
 .catigories-menu {
@@ -660,7 +674,6 @@ justify-content: space-between;
 
 .socials {
     list-style: none;
-    padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
@@ -900,10 +913,6 @@ justify-content: space-between;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
-    .top-bar-and-trends {
-        width: 99%;
-    }
-
     .top-bar {
         position: relative;
         width: 100%;
@@ -985,10 +994,6 @@ justify-content: space-between;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .bar-list {
-        width: 99%;
     }
 
     .post {
@@ -1082,10 +1087,6 @@ justify-content: space-between;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
-    .top-bar-and-trends {
-        width: 99%;
-    }
-
     .top-bar {
         position: relative;
         width: 100%;
@@ -1153,10 +1154,6 @@ justify-content: space-between;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .bar-list {
-        width: 99%;
     }
 
     .post {
@@ -1234,11 +1231,7 @@ justify-content: space-between;
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
-    .top-bar-and-trends {
-        width: 99%;
-    }
-
-    .top-bar {
+        .top-bar {
         position: relative;
         width: 100%;
         height: 100%;
@@ -1312,7 +1305,6 @@ justify-content: space-between;
 
     .bar-list {
         display: block;
-        width: 99%;
     }
 
     .post {
@@ -1395,13 +1387,13 @@ justify-content: space-between;
         padding-right: 1.7%;
         margin-top: 60%;
     }
+
+    .socials-item {
+        width: 20%;
+    }
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
-    .top-bar-and-trends {
-        width: 99%;
-    }
-
     .top-bar {
         position: relative;
         width: 100%;
@@ -1493,7 +1485,6 @@ justify-content: space-between;
 
     .bar-list {
         display: block;
-        width: 99%;
     }
 
     .post {
